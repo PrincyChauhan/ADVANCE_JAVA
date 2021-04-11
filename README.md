@@ -1,6 +1,6 @@
 # ADVANCE_JAVA
 
-
+* Practical 07 : Write a Servlet to set the cookies for first and last name entered by user
 * Practical 09 : Design a form to input details of an employee and submit the data to a servlet. Write code for servlet that will save the entered details as a new record in database table Employee with fields (EmpId, EName, Email, Age).
 * Practical 10 :  Write a Java Servlet to print BE Semester 6 Marksheet of entered enrollment number by user using JDBC.
 * Practical 11 : Write JSP program to display `“Hello world”` on screen.
