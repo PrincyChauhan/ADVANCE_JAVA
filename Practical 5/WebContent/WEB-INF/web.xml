@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>config and context</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  
+    <description></description>
+    <display-name>S1</display-name>
+    <servlet-name>S1</servlet-name>
+    <servlet-class>S1</servlet-class>
+    
+    <init-param>
+    	<param-name>a</param-name>
+    	<param-value>10</param-value>
+    </init-param>
+    
+    <init-param>
+    	<param-name>b</param-name>
+    	<param-value>20</param-value>
+    </init-param>
+    
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>S1</servlet-name>
+    <url-pattern>/S1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>S2</display-name>
+    <servlet-name>S2</servlet-name>
+    <servlet-class>S2</servlet-class>
+    
+    <init-param>
+    <param-name>c</param-name>
+    <param-value>30</param-value>
+    </init-param>
+    
+    <init-param>
+    <param-name>d</param-name>
+    <param-value>16</param-value>
+    </init-param>    
+  </servlet>
+  
+  <context-param>
+  		<param-name>x</param-name>
+    	<param-value>200</param-value>
+  </context-param>
+  
+  <servlet-mapping>
+    <servlet-name>S2</servlet-name>
+    <url-pattern>/S2</url-pattern>
+  </servlet-mapping>
+</web-app>
